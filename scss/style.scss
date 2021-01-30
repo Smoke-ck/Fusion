@@ -1,0 +1,18 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    min-width: 320px;
+}
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+$hover_color:#f7ac53;
+@import "team";
+@import "fusion";
+@import "services";
+@import "projects";
+@import "testimonials";
+@import "contact";
+@import "footer";

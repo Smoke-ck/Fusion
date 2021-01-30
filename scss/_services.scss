@@ -1,0 +1,109 @@
+.services {
+    background-color: #202020;
+    border-top: 1px solid $hover_color;
+    border-bottom:1px solid $hover_color;
+    &__container {
+        padding: 0 15px;
+    }
+    &__head {
+        max-width:650px;
+        margin: 0 auto;
+        text-align: center;
+        padding-top: 150px;
+        position: relative;
+        margin-bottom: 172px;
+        &::before {
+            content: '';
+            display: block;
+            position: absolute;
+            width: 1px;
+            height: 125px;
+            background-color: #feb960;
+            left:50%;
+            transform: translate(-50%);
+            top:0;
+        }
+    }
+    &__wrapper {
+        display: grid;
+        grid-template-columns: repeat(auto-fill,minmax(230px,1fr));
+        grid-column-gap:160px;
+    }
+    &__secondary-tittle {
+        font-family: 'Open Sans';
+        font-size: 14px;
+        line-height: 40px;
+        font-weight: 600;
+        text-transform: uppercase;
+        color: #feb960; 
+    }
+    &__tittle {
+        font-family: 'Merriweather';
+        font-size: 40px;
+        line-height: 65px;
+        font-weight: 400;
+        color: #ffffff;
+    }
+    &__card {
+      margin-bottom: 140px;
+    }
+    &__card-tittle {
+        font-family: 'Merriweather';
+        font-size: 30px;
+        line-height: 45px;
+        font-weight: 400;
+        color: #ffffff;
+        margin-bottom: 24px;
+        position: relative;
+        &::before {
+            content: url(../img/services/1.png);
+            position: absolute;
+            top:-56px;
+        }
+        &--branding {
+            &::before {
+                content: url(../img/services/2.png);
+            }
+        }
+        &--design {
+            &::before {
+                content: url(../img/services/3.png);
+            }
+        }
+    }
+    &__card-desciption {
+        font-family: 'Open Sans';
+        font-size: 14px;
+        line-height: 27px;
+        font-weight: 400;
+        color: #bbbbbb;
+        margin-bottom: 32px;
+    }
+    &__card-link {
+        text-decoration: none;
+        font-family: 'Open Sans';
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 600;
+        text-transform: uppercase;
+        color: #ffffff;
+        position: relative;
+        &::after {
+            content: url(../img/fusion/__420.png);
+            position: absolute;
+            top:-3px;
+            right: -20px;
+        }
+        &:hover {
+            color: $hover_color;
+        }
+    }
+}
+@media(max-width:767px) {
+    .services {
+        &__tittle {
+            font-size: 30px;
+            line-height: 50px
+        }
+    }
+}

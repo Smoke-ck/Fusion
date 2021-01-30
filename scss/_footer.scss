@@ -1,0 +1,56 @@
+.footer {
+    background-color: rgba(35,35,35,0.9);
+    border-bottom:1px solid $hover_color;
+    padding: 50px 15px;
+    &__wrapper {
+        margin: 0 auto;
+        max-width: 750px;
+        display: grid;
+        grid-template-columns: repeat(auto-fill,minmax(170px,1fr));
+        justify-items: center;
+        grid-row-gap:20px;
+    }
+    &__card {
+        max-width: 170px;
+    }
+    &__card-tittle {
+        font-family: 'Open Sans';
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 600;
+        text-transform: uppercase;
+        color: #ffffff;
+        margin-bottom: 30px;
+    }
+    &__card-description {
+        font-family: 'Open Sans';
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 400;
+        text-transform: none;
+        color: #bababa;
+        &--mail {
+            text-decoration: none;
+            &:hover {
+                color:$hover_color;
+            }
+        }
+    }
+    &__list {
+        display: flex;
+    }
+    &__link {
+        text-decoration: none;
+        font-family: 'Open Sans';
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 400;
+        text-transform: none;
+        color: #bababa;
+        margin-right: 10px;
+        margin-top: 10px;
+        &:hover {
+            color: $hover_color;
+        }
+    }
+}

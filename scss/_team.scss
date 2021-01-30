@@ -1,0 +1,80 @@
+.services__head.team__head {
+    margin-bottom: 100px;
+}
+.team {
+    background-color: #181818;
+    border-top: 1px solid $hover_color;
+    border-bottom:1px solid $hover_color;
+    &__wrapper-tittle {
+        font-family: 'Open Sans';
+        font-size: 14px;
+        line-height: 25px;
+        font-weight: 600;
+        text-transform: uppercase;
+        color: #feb960;
+    }
+    &__wrapper-description {
+        font-family: 'Open Sans';
+        font-size: 13px;
+        line-height: 25px;
+        font-weight: 400;
+        color: #ffffff;
+    }
+    &__wrapper {
+        display:grid;
+        grid-template-columns: repeat(auto-fill,minmax(284px,1fr));
+        grid-column-gap:0;
+    }
+    &__wrapper-text {
+        text-align: center;
+        margin-top: 27px;
+    }
+    &__wrapper-card {
+        padding-top: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 325px;
+        border:1px solid #1e1e1e;
+        position: relative;
+        &:hover {
+            align-items:flex-start;
+        }
+    }
+    &__wrapper-pres {
+        display: flex;
+        flex-direction: column;
+    }
+    &__wrapper-card:hover &__wrapper-photo {
+        transform: scale(0.6,0.6);
+        border-top:1px solid #feb960;
+        border-left: 1px solid #feb960;
+        padding: 15px 15px;
+        position: relative;
+        top:-60px;
+        left:-30px;
+        transition-duration: 1s;
+    }
+    &__wrapper-card:hover &__wrapper-text {
+        transform:rotate(90deg);
+        text-align: start;
+        margin-top: 0;
+        padding-top: 25px;
+        transition-duration: 0.5s;
+    }
+    &__wrapper-card:hover &__wrapper-hover-descript {
+        opacity: 1;
+        transition: 2s;
+    }
+    &__wrapper-hover-descript {
+        font-family: 'Open Sans';
+        font-size: 13px;
+        line-height: 25px;
+        font-weight: 400;
+        color: #bababa;
+        position: absolute;
+        width: 170px;
+        right: 0;
+        opacity: 0;
+    }
+}
